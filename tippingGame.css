@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes animate{
+    0%{
+        width: 100%;
+        background-color: rgb(53, 204, 53);
+    }
+    50%{
+        width: 50%;
+        background-color: rgb(218, 230, 51);
+    }
+    100%{
+        width: 0;
+        background-color: rgb(230, 34, 34);
+    }
+}
+.progress-bar.active{
+    animation: 10s animate linear;
+}
+
+body{
+    background-color: #e283ff;
+    font-family: 'Gill Sans';
+}
+
+.text, .input{
+    
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1em;
+    height: calc(50vh - 5px);
+    font-weight: bold;
+    text-align: center;
+}
+.text{
+    padding-top:3em;
+    font-size: 1.9em;
+}
+.input{
+    font-size: 1.7em;
+    background-color: #5e83ff;
+}
+.input::placeholder{
+    color:#e283ff;
+}
+
+.progress-bar{
+    height: 20px;
+    background-color: rgb(53, 204, 53);
+}
+
+.correct{
+    background-color: rgb(141, 252, 141);
+}
+
+.wrong{
+    background-color: rgb(250, 132, 132);
+}
