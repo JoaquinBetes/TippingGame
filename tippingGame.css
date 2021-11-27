@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 @keyframes animate{
     0%{
         width: 100%;
@@ -19,6 +18,10 @@
         background-color: rgb(230, 34, 34);
     }
 }
+.progress-bar{
+    height: 20px;
+    background-color: rgb(53, 204, 53);
+}
 .progress-bar.active{
     animation: 10s animate linear;
 }
@@ -28,8 +31,7 @@ body{
     font-family: 'Gill Sans';
 }
 
-.text, .input{
-    
+.text, .input{ 
     display: block;
     width: 100%;
     border: none;
@@ -43,6 +45,28 @@ body{
     padding-top:3em;
     font-size: 1.9em;
 }
+.correct{
+    background-color: rgb(141, 252, 141);
+}
+.wrong{
+    background-color: rgb(250, 132, 132);
+}
+
+.errors, .time{
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    top: 44%;
+}
+.errors{
+    left: 2%;
+    font-size: 1.4em;
+}
+.time{
+    right: 2%;
+    font-size: 1.6em;
+}
+
 .input{
     font-size: 1.7em;
     background-color: #5e83ff;
@@ -51,15 +75,4 @@ body{
     color:#e283ff;
 }
 
-.progress-bar{
-    height: 20px;
-    background-color: rgb(53, 204, 53);
-}
 
-.correct{
-    background-color: rgb(141, 252, 141);
-}
-
-.wrong{
-    background-color: rgb(250, 132, 132);
-}
