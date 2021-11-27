@@ -38,7 +38,7 @@ input.addEventListener("keyup", () => {
         showtime = setInterval( () => {
             time.innerHTML = `${seconds}s`;
             seconds--;
-            if (seconds == 0){
+            if (seconds < 0){
                 clearInterval(showtime);
                 time.innerHTML = `0s`;
             }
